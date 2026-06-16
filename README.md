@@ -4,6 +4,16 @@ My implementations of different machine learning algorithms from scratch.
 
 **Work in progress**
 
+## demo
+
+The dense network trained with my own hand-derived matrix backprop on real MNIST (28x28), raced against scikit-learn's `MLPClassifier` with the same 784→100→10 architecture. Same data, same width. The from-scratch gradients climb the same curve and end up neck-and-neck (94.5% vs 94.0% on held-out, ~3s training).
+
+![from-scratch backprop vs sklearn on MNIST](dense/demo.gif)
+
+```bash
+cd dense && python3 demo.py   # regenerates demo.gif
+```
+
 ## motivation
 
 Prior to building these models, I had explored many machine learning model implementations from different ML libraries like pytorch, scikit-learn, tensorflow (Fully Connected Lyears, convoluitonal neural networks, and recurrent neural networks)
